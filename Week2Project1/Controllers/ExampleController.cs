@@ -11,6 +11,9 @@ namespace Week2Project1.Controllers
     {
         // We want to have the webserver respond to a request
         // localhost:1234/api/example -> "Hello"
+
+        [HttpGet]
+        [Route("api/AddTen/addten/{id}")]
         public string Get()
         {
             return "Hello";

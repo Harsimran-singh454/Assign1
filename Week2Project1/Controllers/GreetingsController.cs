@@ -9,9 +9,11 @@ namespace Week2Project1.Controllers
 {
     public class GreetingsController : ApiController
     {
-        public string get()
+        [HttpPost]
+        [Route("api/Greetings/Greeting/{str}")]
+        public string Greeting(string str)
         {
-            return "Hello World!";
+            return str;
         }
     }
 }

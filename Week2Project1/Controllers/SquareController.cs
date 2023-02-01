@@ -9,9 +9,10 @@ namespace Week2Project1.Controllers
 {
     public class SquareController : ApiController
     {
-        public double get(int id)
+        [HttpGet]
+        public int Square(int id)
         {
-            var num = Math.Pow(id, 2);
+            int num = (int)Math.Pow(id, 2);
             return num;
         }
     }

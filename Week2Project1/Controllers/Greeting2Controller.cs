@@ -9,11 +9,12 @@ namespace Week2Project1.Controllers
 {
     public class Greeting2Controller : ApiController
     {
-        public string get(int id)
+        [HttpGet]
+        [Route("api/Greeting2/Greetings/{id}")]
+        public string Greetings(int id)
         {
-            var num = id;
+            int num = id;
             return ("Greetings to " + num + " People");
         }
     }
 }
-
