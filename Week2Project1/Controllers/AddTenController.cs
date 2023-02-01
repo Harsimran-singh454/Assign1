@@ -11,7 +11,10 @@ namespace Week2Project1.Controllers
 {
     public class AddTenController : ApiController
     {
+        //This function will take an integer value and add 10 to it.
+
         //example
+
         //.../AddTen/5 -> 15
         //.../AddTen/10 -> 20
         //.../AddTen/2 -> 12

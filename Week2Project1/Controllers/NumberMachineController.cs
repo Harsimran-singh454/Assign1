@@ -9,6 +9,17 @@ namespace Week2Project1.Controllers
 {
     public class NumberMachineController : ApiController
     {
+
+        // This function takes an integer as input and then perform 4 arithmatic operations on it
+
+        //example
+
+        ///api/NumberMachine/5" ->  "Addition of 2 to the input value = 7   
+        ///                 |||      Multiplication by 2 of the input value = 10   
+        ///                 |||      Division by 2 of the input value = 2   
+        ///                 |||      Subtraction by 2 of the input value = 3
+        
+
         [HttpGet]
         public string NumberMachine(int id)
         {
@@ -19,8 +30,8 @@ namespace Week2Project1.Controllers
 
             return ("Addition of 2 to the input value = " + num1 + 
                 "   |||Multiplication by 2 of the input value = " + num2 + 
-                "   |||Division by 2 of the input value" + num3 + 
-                "   |||Subtraction by 2 of the input value " + num4 );
+                "   |||Division by 2 of the input value = " + num3 + 
+                "   |||Subtraction by 2 of the input value = " + num4 );
         }
     }
 }
